@@ -1,0 +1,249 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+
+/*--- Sidebar--*/
+
+.main_sidebar {
+    position: fixed;
+    width: 225px;
+    /*    background: #344042;*/
+    background: #122442;
+    color: #00bcf2;
+    height: 100vh;
+    /*    padding: 30px;*/
+    z-index: 1;
+}
+
+.main_sidebar .logo {
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 20px;
+}
+
+.main_sidebar .logo img {
+    width: 150px;
+}
+
+.main_sidebar ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.main_sidebar ul li {
+    padding: 8px 0px;
+    transition: 0.5s;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main_sidebar ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #00bcf2;
+    display: none;
+}
+
+.main_sidebar ul li:hover:before {
+    display: block;
+}
+
+.main_sidebar ul li:hover a {
+    margin-left: 10px;
+}
+
+.main_sidebar ul li a {
+    color: #00bcf2;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.main_sidebar ul li a:hover{
+    text-decoration: none;
+}
+.main_sidebar ul li .menu_link.active{
+    color: red;
+}
+.main_sidebar ul li .menu_link:focus{
+    color: red;
+}
+.main_sidebar ul li.active a{
+    display: block;
+    color: #fff;
+}
+/*
+.menu_link.active{
+    display: block;
+    color: red;
+}
+*/
+
+.setting_area {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px 20px;
+}
+
+
+/*--- Page Header/footer--*/
+
+.page_header {
+    background: #00bcf2;
+/*    padding-left: 225px;*/
+}
+
+.page_title{
+    padding: 15px 0;
+}
+
+.page_title h3 {
+    margin-bottom: 0;
+    color: #122442;
+}
+.page_header .right_icons{
+    font-size: 22px;
+    color: #122442;
+}
+footer{
+    padding: 20px;
+     background: #00bcf2;
+     color: #122442;
+}
+footer p{
+    margin: 0;
+}
+
+.btn-primary {
+    color: #00bcf2;
+    background-color: #122442;
+    /* border-color: #122442; */
+}
+
+/*--- Main part--*/
+.content_wrapper {
+    position: relative;
+    padding-left: 225px;
+}
+
+
+.main_content {
+    min-height: calc(100vh - 64px - 61px);
+}
+
+.tbl_form th,
+.tbl_form td {
+    padding: 0;
+    border: 0;
+}
+
+.total_box {
+    height: 130px;
+    font-size: 12px;
+    background: #fff;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*--- Table  --*/
+
+.table_header h3{
+    text-decoration: underline;
+}
+
+.table th, .table td {
+	padding: 7px;
+	 border:0; 
+}
+
+/*--- login form css--*/
+
+.form_bg {
+	background: #00bcf2;
+}
+.form_box form {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+.form_logo{
+    
+}
+.form_logo img{
+    width: 200px;
+}
+
+/*--- form css--*/
+.form {
+	padding: 20px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+	 background: #ececec; 
+}
+
+.tbl_wrapper {
+	padding: 20px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+/*---------*/
+.reg_form {
+    width: 600px;
+    margin: 20px auto;
+    background: #ddd;
+    padding: 40px 60px 60px;
+}
+
+.reg_form .logo {
+    text-align: center;
+}
+
+.reg_form .logo img {
+    width: 200px;
+}
+
+.reg_form button {
+    width: 120px;
+    font-size: 16px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+
+/*--- success css--*/
+
+.success_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.success_text .img {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.success_text .img img {
+    width: 200px;
+}
